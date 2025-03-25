@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ET Tech Academy - Tech Videos & Tutorials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="EthioTech Academy.png" type="image/png">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="EthioTech.png" alt="Ethio Tech Academy">
+                <h1><span class="ethio">Ethio</span> <span class="tech">Tech</span> <span class="academy">Academy</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Tech Insights & Tutorials</h2>
+                <p>Your source for the latest technology reviews, how-to guides, and top tech videos</p>
+                <a href="#videos" class="btn">Watch Videos</a>
+                <a href="http://www.youtube.com/@ETTopvideos-i1x" target="_blank" class="btn secondary">Subscribe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Videos Section -->
+    <section class="featured-videos">
+        <div class="container">
+            <h2>Featured Videos</h2>
+            <div class="video-grid">
+                <!-- Video items will be added dynamically by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Categories Section -->
+    <section class="video-categories" id="videos">
+        <div class="container">
+            <h2>Video Categories</h2>
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">All Videos</button>
+                <button class="tab-btn" data-category="tutorials">Tutorials</button>
+                <button class="tab-btn" data-category="reviews">Reviews</button>
+                <button class="tab-btn" data-category="top10">Top 10</button>
+            </div>
+            <div class="video-container">
+                <!-- Videos will be filtered here -->
+            </div>
+            <div class="load-more">
+                <button id="loadMoreBtn">Load More Videos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>About ET Top Videos</h2>
+                <p>Welcome to ET Top Videos, your premier destination for technology-related content created by an IT professional with years of industry experience.</p>
+                <p>Our mission is to provide high-quality, informative, and engaging videos that help viewers understand complex tech concepts, discover new gadgets, and stay updated with the latest trends in the technology world.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <i class="fas fa-video"></i>
+                        <span class="count" data-target="150">0</span>
+                        <span>Videos</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <span class="count" data-target="10000">0</span>
+                        <span>Subscribers</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-eye"></i>
+                        <span class="count" data-target="500000">0</span>
+                        <span>Views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="assets/images/banner.jpg" alt="About Ethio Tech Academy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter to get notified about new videos and tech tips</p>
+            <form id="newsletterForm">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> birhanushiferaw29@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +251966827083</p>
+                    <div class="social-links">
+                        <a href="http://www.youtube.com/@ETTopvideos-i1x" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/brebre2164/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="EthioTech.png" alt="EthioTech Academy Logo">
+                    <h3>ET Top Videos</h3>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#videos" data-category="tutorials">Tutorials</a></li>
+                        <li><a href="#videos" data-category="reviews">Reviews</a></li>
+                        <li><a href="#videos" data-category="top10">Top 10</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ethio Tech Academy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
